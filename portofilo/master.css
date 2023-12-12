@@ -1,0 +1,384 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+font-family:monospace;
+}
+.font{
+    background-color: #000000;
+    background-image: linear-gradient(to top,gray,black);
+}
+.header{
+/* position: relative; */
+color: aliceblue;
+background-image: linear-gradient(to bottom,black,rgb(62, 53, 53));
+width: 100%;
+height: 100%;
+}
+.header .nav{
+margin: auto;
+width: 70%;
+height: 30px;
+display: flex;
+justify-content: space-between;
+}
+.header .nav .img img{
+margin: 10px 0 0 10px;    
+border-radius: 5px;
+width: 100px;
+height: 50px;
+}
+.header .nav i{
+    
+    display: none;
+}
+.header i:hover ul{
+    display: flex;
+    }
+.header ul a{
+text-decoration: none;
+color: aliceblue;
+
+}
+.header  ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;  
+}
+.me {
+display: flex;
+width: 90vw;
+justify-content: space-between;
+margin: auto;
+align-items: center;
+margin-top: 4vh;
+height: 90%;
+
+}
+.me .p1{
+border: 2px solid rgb(72, 72, 144);    
+padding: 20px;
+background-color: rgb(230, 236, 242);
+color:black;
+width: 40%;
+border-radius: 5px;
+margin-right: 10px;
+
+}
+.me .p1 button {
+border-radius: 5px;
+border: none;
+margin-top: 5px;
+width: 100px;
+height: 35px;
+padding: 5px;
+background-color:blue;
+color: #f1ecec;
+
+}
+.me .p1 button a{
+text-decoration: none;
+color: aliceblue;
+
+}
+.me .img {
+    display: flex;
+    justify-content: flex-end;
+}
+ .me .img img{
+image-rendering: auto;
+max-width: 50%;
+
+height: 80%;
+border-radius:30% ;
+
+}
+.header .nav ul li{
+
+padding: 10px;
+
+}
+/* About styling */
+
+.about{
+    background-image: linear-gradient(to top,black,rgb(62, 53, 53));
+height: 65vh;
+width: 100%;
+}
+/* .about .heading{
+
+text-align: center;
+color:aliceblue;
+font-style: italic;
+} */
+.about .content{
+display: flex;
+width: 90%;
+margin: auto;
+height: 100%;
+
+}
+.about .content .img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.about .content .ame{
+    padding: 10px;
+    /* background-color: aliceblue; */
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    
+}
+/* skills styling */
+.edu{
+    width: 100%;
+    margin: auto;
+    height: 50vh;
+    background-image: linear-gradient(to top,black,rgb(62, 53, 53));
+    color: aliceblue;
+
+}
+.edu .heading{
+    text-align: center;
+}
+.edu .content{
+    /* display: flex; */
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    justify-content: center;
+    text-align: center;
+
+}
+.edu .content .icons{
+color: orange;
+font-size: 20px;
+
+display: flex;
+gap: 1em;
+border-radius: 5px;
+flex-wrap: wrap;
+justify-content: center;
+}
+.edu .content .icons i{
+background-color: aliceblue;
+height: fit-content;
+border-radius: 3px;
+padding: 10px;
+margin-top: 8%;
+}
+
+
+/* education  */
+
+.education{
+
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background-image: linear-gradient(to top,black,rgb(62, 53, 53));
+    color: aliceblue;
+} 
+.education .heading {
+
+    text-align: center;
+}
+.education .content {
+display: flex;
+color: #000000;
+text-align: center;
+padding: 10px;
+width: 100%;
+height: 80%;
+gap: 10px;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.education .content .card{
+width: 25%;
+    background-color: #f1ecec;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 10px;
+
+    
+}
+.education .content .card img{
+
+    width: 100%;
+    height: 80%;
+}
+
+/* project styling */
+.project{
+width: 100%;
+background-image: linear-gradient(to top,black,rgb(62, 53, 53));
+
+
+}
+.project .heading{
+text-align: center;
+
+color: aliceblue;
+
+}
+.project .content{
+    height: 100%;
+display: flex;
+justify-content: center;
+}
+.project .content .card {
+    transition: .3s;
+}
+.project .content .card a{
+text-decoration: none;
+
+}
+.project .content .card:hover{
+    box-shadow: 0px 0px .2 black inset;
+    transform: translate(0px,-4px);
+}
+.project .content .card .img img{
+width: 100%;
+
+}
+.project .content .card{
+    width: 30%;
+    margin:10px 5%;
+    padding: 5px;
+    height: 40%;
+    
+    background-color: aliceblue;
+    border-radius:3px ;
+}
+.project .content .detail{
+text-align: center;
+
+}
+
+
+.footer {
+    color: aliceblue;
+    text-align: center;
+    height: 20vh;
+    background-image: linear-gradient(to bottom,black ,rgb(42, 17, 17));
+    
+}
+.footer i{
+font-size: 30px;
+margin:30px 10px;
+
+
+}
+.footer i a{
+
+    font-size: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.header .nav i:hover ul{
+    display: block;
+}
+
+@media (max-width:600px) {
+    .header .nav ul {
+        display: none;
+
+
+    }
+    .header .nav i {
+        font-size: 20px;
+        position: absolute;
+        top: 2%;
+        right: 2%; 
+        display: block;
+        width: 100%;
+        
+    }
+    .header .nav:hover ul,li{
+        
+        display: block;
+        width:107px;
+        background-color: aliceblue;
+        margin-top: 5px;
+        font-size: 25px;
+        border-radius: 3px;
+        border-bottom: 1px solid black;
+        
+    }
+    .header .nav ul li a{
+        color: #000000;
+    
+
+    }
+    .me{
+        display: block;
+        width: 80vw;
+    }
+    .me .p1{
+        display: block;
+        width: 100%;
+        height: 55%;
+    }
+    .me .img{
+        justify-content: center;
+        display: none;
+    }
+    .me .img img{
+        height:100% ;
+    }
+    .about .content .img img{
+        width: 60%;
+        margin-left:50px;
+    }
+    .about .content .ame{
+        height: fit-content;
+        width: 100%;
+    }
+    .edu .content{
+        display: block;
+    }
+
+    .about .content {
+        display: block;
+    }
+    .edu .content .img {
+        width: 100%;
+        height: 50%;
+    }
+    .edu .content .lists{
+        width: fit-content;
+        height: fit-content;
+        margin-top: 20px;
+        padding: 10px 2px 10px 1px;
+        display: block;
+    }
+    .edu .content .lists ul{
+
+        margin-top: 5px;
+    }
+    .education .content {
+        display: block;
+    }
+    .education .content .card{
+        width: 95%;
+        margin-bottom:10px;
+    }
+    .project .content{
+        flex-direction: column;
+    }
+    .project .content .card{
+        width: 90%;
+    }
+}
